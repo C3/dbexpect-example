@@ -1,8 +1,8 @@
 requires "defaults/customers_defaults.rb"
 
 describe "Moving customers from source to target" do
-  @src = table(:testgen_src,:testgen_src,:customers_src)
-  @tgt = table(:testgen_tgt,:testgen_tgt,:customers_tgt)
+  @src = table(:dbexpect_src,:dbexpect_src,:customers_src)
+  @tgt = table(:dbexpect_tgt,:dbexpect_tgt,:customers_tgt)
 
   etl_run_command "ruby etl2.rb"
 
