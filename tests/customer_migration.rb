@@ -1,3 +1,5 @@
+requires "defaults/customers_defaults.rb"
+
 describe "Moving customers from source to target" do
   @src = table(:testgen_src,:testgen_src,:customers_src)
   @tgt = table(:testgen_tgt,:testgen_tgt,:customers_tgt)
